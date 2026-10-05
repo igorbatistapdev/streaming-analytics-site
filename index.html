@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Streaming no Brasil | Projeto de Data Analytics</title>
+
+<link rel="icon" type="image/favicon.png" href="image/favicon.png">
+
+
+<meta name="description" content="Análise orientada por dados sobre comportamento dos usuários, desempenho das plataformas e consumo de conteúdo de streaming no Brasil.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#projeto">Pular para o conteúdo</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio" aria-label="Streaming no Brasil, início"><span class="play" aria-hidden="true"></span>Streaming no Brasil</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#projeto">Projeto</a><a href="#analises">Análises</a>
+      <a href="#metodologia">Metodologia</a><a href="#tecnologias">Tecnologias</a>
+      <a class="pill" href="#dashboard">Dashboard</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <span class="badge">Data Analytics • Streaming no Brasil</span>
+      <h1>Streaming<br>no Brasil</h1>
+      <p class="sub">Uma análise orientada por dados sobre comportamento dos usuários, desempenho das plataformas e consumo de conteúdo no Brasil.</p>
+      <dl class="meta" aria-label="Informações acadêmicas">
+        <div><dt>Disciplina</dt><dd>Data Analytics</dd></div>
+        <div><dt>Professor</dt><dd>Alexandre Neves Louzada</dd></div>
+        <div><dt>Aluno</dt><dd>Igor Batista Pereira</dd></div>
+      </dl>
+      <div class="actions">
+        <button class="btn primary" data-open="dashboard" type="button"><span aria-hidden="true">▶</span> Explorar Dashboard</button>
+        <button class="btn ghost" data-open="github" type="button">Ver código no GitHub</button>
+      </div>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <div class="panel">
+        <div class="panel-top"><i></i><i></i><i></i><span>consumo_streaming</span></div>
+        <svg viewBox="0 0 400 220" class="chart" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="gA" x1="0" x2="1"><stop offset="0" stop-color="#7C3AED"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+            <linearGradient id="gF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".35"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient>
+          </defs>
+          <g class="grid-l"><line x1="0" y1="55" x2="400" y2="55"/><line x1="0" y1="110" x2="400" y2="110"/><line x1="0" y1="165" x2="400" y2="165"/></g>
+          <path class="fill" d="M0 170 C40 150 60 120 100 130 S160 80 200 95 S270 150 310 70 S370 40 400 30 V220 H0Z" fill="url(#gF)"/>
+          <path class="line" d="M0 170 C40 150 60 120 100 130 S160 80 200 95 S270 150 310 70 S370 40 400 30" fill="none" stroke="url(#gA)" stroke-width="3" stroke-linecap="round"/>
+          <path class="line2" d="M0 190 C50 180 80 175 120 165 S200 150 240 140 S330 120 400 100" fill="none" stroke="#94A3B8" stroke-opacity=".5" stroke-width="2" stroke-dasharray="4 6"/>
+          <circle class="dot" cx="310" cy="70" r="5" fill="#38BDF8"/>
+        </svg>
+        <div class="bars"><span style="--h:40%"></span><span style="--h:64%"></span><span style="--h:52%"></span><span style="--h:80%"></span><span style="--h:60%"></span><span style="--h:92%"></span><span style="--h:70%"></span></div>
+      </div>
+      <div class="chip c1"><small>Reproduções</small><b>tendência</b></div>
+      <div class="chip c2"><small>Avaliação média</small><b>por plataforma</b></div>
+      <div class="chip c3"><small>Receita</small><b>ao longo do tempo</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="projeto">
+  <div class="wrap split">
+    <div class="reveal">
+      <h2>Sobre o Projeto</h2>
+      <p class="lead">Plataformas de streaming geram uma quantidade enorme de registros de uso. Este projeto transforma esses registros em respostas.</p>
+    </div>
+    <div class="about reveal">
+      <article><h3>Contexto</h3><p>O consumo de conteúdo digital no Brasil se divide entre plataformas, categorias e horários. Entender esse comportamento ajuda a comparar o desempenho de cada serviço.</p></article>
+      <article><h3>Objetivo</h3><p>Aplicar análise e visualização de dados com Python para identificar padrões de consumo, comparar plataformas e apresentar os resultados de forma interativa.</p></article>
+      <article><h3>Problema analisado</h3><p>Como consumo, assinaturas, receita e avaliações se distribuem entre plataformas, tipos de conteúdo e períodos?</p></article>
+      <article><h3>Por que importa</h3><p>Indicadores claros e visualizações bem escolhidas transformam dados brutos em decisões sobre catálogo, audiência e receita. A base utilizada é simulada, de uso acadêmico.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="analises">
+  <div class="wrap">
+    <div class="head reveal"><h2>O que foi analisado</h2><p class="lead">Cada dimensão corresponde a um grupo de informações presentes na base de dados.</p></div>
+    <div class="cards">
+      <article class="card reveal"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h3>Plataformas</h3><p>Comparação entre as plataformas de streaming presentes na base.</p></article>
+      <article class="card reveal"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6M16 5a3.5 3.5 0 010 7M21.5 20c0-2.6-1.6-4.6-4-5.5"/></svg><h3>Público</h3><p>Usuários ativos e comportamento de consumo.</p></article>
+      <article class="card reveal"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5M16 4v5"/></svg><h3>Conteúdo</h3><p>Categorias, gêneros e títulos.</p></article>
+      <article class="card reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg><h3>Consumo</h3><p>Reproduções e tempo médio de consumo.</p></article>
+      <article class="card reveal"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><h3>Avaliações</h3><p>Avaliações médias dos conteúdos.</p></article>
+      <article class="card reveal"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 16V10M12 16V5M18 16v-8"/></svg><h3>Desempenho</h3><p>Assinaturas e receita das plataformas.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="indicadores">
+  <div class="wrap">
+    <div class="head reveal"><h2>Principais Indicadores</h2><p class="lead">Métricas que você encontra no dashboard e que se atualizam conforme os filtros escolhidos.</p></div>
+    <div class="kpis">
+      <div class="kpi reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span><h3>Reproduções</h3><p>Volume de visualizações e audições.</p></div>
+      <div class="kpi reveal"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg></span><h3>Usuários ativos</h3><p>Tamanho da audiência no período.</p></div>
+      <div class="kpi reveal"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg></span><h3>Assinaturas</h3><p>Base de assinantes por plataforma.</p></div>
+      <div class="kpi reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M16.5 7.5C15.5 6.5 14 6 12 6c-2.5 0-4 1.2-4 3s1.5 2.5 4 3 4 1.2 4 3-1.5 3-4 3c-2 0-3.5-.6-4.5-1.6"/></svg></span><h3>Receita</h3><p>Desempenho financeiro das plataformas.</p></div>
+      <div class="kpi reveal"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 3h6"/></svg></span><h3>Tempo médio de consumo</h3><p>Quanto tempo cada sessão dura em média.</p></div>
+      <div class="kpi reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><h3>Avaliação média</h3><p>Percepção de qualidade do conteúdo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="metodologia">
+  <div class="wrap">
+    <div class="head reveal"><h2>Metodologia</h2><p class="lead">Do arquivo bruto ao painel interativo, em seis etapas.</p></div>
+    <ol class="tl">
+      <li class="reveal"><b>01</b><h3>Dados</h3><p>Leitura e conhecimento da base.</p></li>
+      <li class="reveal"><b>02</b><h3>Tratamento</h3><p>Tipos, nulos, duplicidades e padronização.</p></li>
+      <li class="reveal"><b>03</b><h3>Análise exploratória</h3><p>Distribuições, comparações e correlações.</p></li>
+      <li class="reveal"><b>04</b><h3>Indicadores</h3><p>Definição e cálculo dos KPIs.</p></li>
+      <li class="reveal"><b>05</b><h3>Visualizações</h3><p>Gráficos escolhidos para cada pergunta.</p></li>
+      <li class="reveal"><b>06</b><h3>Dashboard</h3><p>Filtros e leitura interativa dos resultados.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="tecnologias">
+  <div class="wrap">
+    <div class="head reveal"><h2>Tecnologias utilizadas</h2></div>
+    <ul class="tech reveal">
+      <li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>Streamlit</li><li>GitHub</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta" id="dashboard">
+  <div class="wrap cta-in reveal">
+    <h2>Explore os dados</h2>
+    <p class="lead">Explore os dados de forma interativa através de filtros, indicadores e visualizações desenvolvidas para facilitar a compreensão dos padrões de consumo e desempenho do streaming.</p>
+    <button class="btn primary big" data-open="dashboard" type="button"><span aria-hidden="true">▶</span> Acessar Dashboard</button>
+    <p class="note">Dashboard hospedado externamente</p>
+  </div>
+</section>
+
+<section class="sec" id="codigo">
+  <div class="wrap code reveal">
+    <div><h2>Projeto Open Source / Código</h2><p class="lead">O código, a estrutura e a documentação do projeto estão disponíveis no GitHub.</p></div>
+    <button class="btn ghost" data-open="github" type="button"><span aria-hidden="true">⌂</span> Ver projeto no GitHub</button>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><strong>Streaming no Brasil — Data Analytics Project</strong><p>Python • Data Analysis • Visualization • Streamlit</p></div>
+    <a href="#" data-open="github">GitHub</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
